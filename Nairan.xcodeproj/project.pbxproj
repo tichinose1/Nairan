@@ -13,6 +13,7 @@
 		772287A125CED5490092FBF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772287A025CED5490092FBF1 /* Preview Assets.xcassets */; };
 		7775328A25CED92700687DF0 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775328925CED92700687DF0 /* HouseView.swift */; };
 		77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D5562D25D1070A008E302D /* AdviceListItemView.swift */; };
+		77D5563125D109A0008E302D /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D5563025D109A0008E302D /* Advice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		772287A225CED5490092FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7775328925CED92700687DF0 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
 		77D5562D25D1070A008E302D /* AdviceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceListItemView.swift; sourceTree = "<group>"; };
+		77D5563025D109A0008E302D /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7722879F25CED5490092FBF1 /* Preview Content */,
 				7775328925CED92700687DF0 /* HouseView.swift */,
 				77D5562D25D1070A008E302D /* AdviceListItemView.swift */,
+				77D5563025D109A0008E302D /* Advice.swift */,
 			);
 			path = Nairan;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				7775328A25CED92700687DF0 /* HouseView.swift in Sources */,
 				77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */,
+				77D5563125D109A0008E302D /* Advice.swift in Sources */,
 				7722879C25CED5420092FBF1 /* ContentView.swift in Sources */,
 				7722879A25CED5420092FBF1 /* NairanApp.swift in Sources */,
 			);

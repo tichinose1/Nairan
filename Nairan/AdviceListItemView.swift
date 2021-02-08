@@ -8,17 +8,26 @@
 import SwiftUI
 
 struct AdviceListItemView: View {
+
+    var advice: Advice
+
     var body: some View {
         HStack {
             Image(systemName: "house")
-            Text("指摘")
+            Text(advice.title)
         }
     }
 }
 
 struct AdviceListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceListItemView()
-            .previewLayout(.sizeThatFits)
+        AdviceListItemView(
+            advice: Advice(
+                title: "汚れがあります",
+                image: URL(string: "https://www.apple.com/jp/")!,
+                detail: "hogehoge"
+            )
+        )
+        .previewLayout(.sizeThatFits)
     }
 }

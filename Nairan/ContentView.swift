@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    var advices = [
+        Advice(
+            title: "汚れがあります",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "hogehoge"
+        )
+    ]
+
     var body: some View {
         NavigationView {
             List {
-                AdviceListItemView()
-                AdviceListItemView()
-                AdviceListItemView()
+                AdviceListItemView(advice: advices[0])
+                AdviceListItemView(advice: advices[0])
             }
             .navigationTitle("指摘一覧")
         }
