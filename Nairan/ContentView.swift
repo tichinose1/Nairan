@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            HouseView()
-            HouseView()
-            HouseView()
+            AdviceListItemView()
+            AdviceListItemView()
+            AdviceListItemView()
         }
     }
 }

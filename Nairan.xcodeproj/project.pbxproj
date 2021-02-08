@@ -12,6 +12,7 @@
 		7722879E25CED5490092FBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7722879D25CED5490092FBF1 /* Assets.xcassets */; };
 		772287A125CED5490092FBF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772287A025CED5490092FBF1 /* Preview Assets.xcassets */; };
 		7775328A25CED92700687DF0 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775328925CED92700687DF0 /* HouseView.swift */; };
+		77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D5562D25D1070A008E302D /* AdviceListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		772287A025CED5490092FBF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		772287A225CED5490092FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7775328925CED92700687DF0 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		77D5562D25D1070A008E302D /* AdviceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				772287A225CED5490092FBF1 /* Info.plist */,
 				7722879F25CED5490092FBF1 /* Preview Content */,
 				7775328925CED92700687DF0 /* HouseView.swift */,
+				77D5562D25D1070A008E302D /* AdviceListItemView.swift */,
 			);
 			path = Nairan;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7775328A25CED92700687DF0 /* HouseView.swift in Sources */,
+				77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */,
 				7722879C25CED5420092FBF1 /* ContentView.swift in Sources */,
 				7722879A25CED5420092FBF1 /* NairanApp.swift in Sources */,
 			);
