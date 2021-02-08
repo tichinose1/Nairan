@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            AdviceListItemView()
-            AdviceListItemView()
-            AdviceListItemView()
+        NavigationView {
+            List {
+                AdviceListItemView()
+                AdviceListItemView()
+                AdviceListItemView()
+            }
+            .navigationTitle("指摘一覧")
         }
     }
 }
