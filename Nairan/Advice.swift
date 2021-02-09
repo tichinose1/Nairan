@@ -8,7 +8,15 @@
 import Foundation
 
 struct Advice {
+    var oid: String
     var title: String
     var image: URL
     var detail: String
+}
+
+extension Advice: Identifiable {
+
+    var id: String {
+        oid
+    }
 }

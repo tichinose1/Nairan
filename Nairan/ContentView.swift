@@ -11,7 +11,14 @@ struct ContentView: View {
 
     var advices = [
         Advice(
+            oid: "1",
             title: "汚れがあります",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "hogehoge"
+        ),
+        Advice(
+            oid: "2",
+            title: "ひび割れしています",
             image: URL(string: "https://www.apple.com/jp/")!,
             detail: "hogehoge"
         )
@@ -19,9 +26,8 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                AdviceListItemView(advice: advices[0])
-                AdviceListItemView(advice: advices[0])
+            List(advices) { advice in
+                AdviceListItemView(advice: advice)
             }
             .navigationTitle("指摘一覧")
         }
