@@ -13,7 +13,7 @@ struct AdviceListItemView: View {
 
     var body: some View {
         HStack {
-            Image(systemName: "house")
+            Image("advice01")
             Text(advice.title)
         }
     }
