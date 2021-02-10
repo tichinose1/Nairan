@@ -20,3 +20,21 @@ extension Advice: Identifiable {
         oid
     }
 }
+
+extension Advice {
+
+    static var advices = [
+        Advice(
+            oid: "1",
+            title: "汚れがあります",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "hogehoge"
+        ),
+        Advice(
+            oid: "2",
+            title: "ひび割れしています",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "hogehoge"
+        )
+    ]
+}

@@ -22,12 +22,7 @@ struct AdviceListItemView: View {
 struct AdviceListItemView_Previews: PreviewProvider {
     static var previews: some View {
         AdviceListItemView(
-            advice: Advice(
-                oid:  "1",
-                title: "汚れがあります",
-                image: URL(string: "https://www.apple.com/jp/")!,
-                detail: "hogehoge"
-            )
+            advice: Advice.advices[0]
         )
         .previewLayout(.sizeThatFits)
     }
