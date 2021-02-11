@@ -28,13 +28,25 @@ extension Advice {
             oid: "1",
             title: "汚れがあります",
             image: URL(string: "https://www.apple.com/jp/")!,
-            detail: "hogehoge"
+            detail: "1"
         ),
         Advice(
             oid: "2",
             title: "ひび割れしています",
             image: URL(string: "https://www.apple.com/jp/")!,
-            detail: "hogehoge"
+            detail: "2"
+        ),
+        Advice(
+            oid: "3",
+            title: "溝があります",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "3"
+        ),
+        Advice(
+            oid: "4",
+            title: "剥がれています",
+            image: URL(string: "https://www.apple.com/jp/")!,
+            detail: "3"
         )
     ]
 }
