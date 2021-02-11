@@ -14,6 +14,7 @@ struct ContentView: View {
                 AdviceListItemView(advice: advice)
             }
             .navigationTitle("指摘一覧")
+            .navigationBarItems(trailing: Button("Camera") {})
         }
     }
 }
