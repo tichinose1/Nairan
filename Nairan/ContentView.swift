@@ -19,9 +19,9 @@ struct ContentView: View {
             .navigationBarItems(trailing: Button("フォト") {
                 isImagePickerPresented = true
             })
-        }
-        .sheet(isPresented: $isImagePickerPresented) {
-            ImagePickerView()
+            .sheet(isPresented: $isImagePickerPresented) {
+                ImagePickerView()
+            }
         }
     }
 }
