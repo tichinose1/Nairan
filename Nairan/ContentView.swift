@@ -16,8 +16,10 @@ struct ContentView: View {
                 AdviceListItemView(advice: advice)
             }
             .navigationTitle("指摘一覧")
-            .navigationBarItems(trailing: Button("フォト") {
+            .navigationBarItems(trailing: Button(action: {
                 isImagePickerPresented = true
+            }) {
+                Image(systemName: "photo.on.rectangle.angled")
             })
             .sheet(isPresented: $isImagePickerPresented) {
                 ImagePickerView()
