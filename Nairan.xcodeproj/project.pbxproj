@@ -13,6 +13,7 @@
 		772287A125CED5490092FBF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772287A025CED5490092FBF1 /* Preview Assets.xcassets */; };
 		7775328A25CED92700687DF0 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775328925CED92700687DF0 /* HouseView.swift */; };
 		77CBFB6F25D6AD0200624774 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CBFB6E25D6AD0200624774 /* ImagePickerView.swift */; };
+		77CBFB7325D77A9E00624774 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CBFB7225D77A9E00624774 /* CameraView.swift */; };
 		77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D5562D25D1070A008E302D /* AdviceListItemView.swift */; };
 		77D5563125D109A0008E302D /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D5563025D109A0008E302D /* Advice.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		772287A225CED5490092FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7775328925CED92700687DF0 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
 		77CBFB6E25D6AD0200624774 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		77CBFB7225D77A9E00624774 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		77D5562D25D1070A008E302D /* AdviceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceListItemView.swift; sourceTree = "<group>"; };
 		77D5563025D109A0008E302D /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				77D5562D25D1070A008E302D /* AdviceListItemView.swift */,
 				77D5563025D109A0008E302D /* Advice.swift */,
 				77CBFB6E25D6AD0200624774 /* ImagePickerView.swift */,
+				77CBFB7225D77A9E00624774 /* CameraView.swift */,
 			);
 			path = Nairan;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7775328A25CED92700687DF0 /* HouseView.swift in Sources */,
+				77CBFB7325D77A9E00624774 /* CameraView.swift in Sources */,
 				77D5562E25D1070A008E302D /* AdviceListItemView.swift in Sources */,
 				77D5563125D109A0008E302D /* Advice.swift in Sources */,
 				77CBFB6F25D6AD0200624774 /* ImagePickerView.swift in Sources */,

@@ -22,7 +22,7 @@ struct ContentView: View {
                 Image(systemName: "photo.on.rectangle.angled")
             })
             .sheet(isPresented: $isImagePickerPresented) {
-                ImagePickerView()
+                CameraView()
             }
         }
     }
