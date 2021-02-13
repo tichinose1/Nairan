@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isImagePickerPresented = false
+    @State private var isCameraPresented = false
 
     var body: some View {
         NavigationView {
@@ -16,14 +17,24 @@ struct ContentView: View {
                 AdviceListItemView(advice: advice)
             }
             .navigationTitle("指摘一覧")
-            .navigationBarItems(trailing: Button(action: {
-                isImagePickerPresented = true
-            }) {
-                Image(systemName: "photo.on.rectangle.angled")
+            .navigationBarItems(trailing: HStack {
+                Button(action: {
+                    isImagePickerPresented = true
+                }) {
+                    Image(systemName: "photo.on.rectangle.angled")
+                }
+                .sheet(isPresented: $isImagePickerPresented) {
+                    ImagePickerView()
+                }
+                Button(action: {
+                    isCameraPresented = true
+                }) {
+                    Image(systemName: "camera.viewfinder")
+                }
+                .sheet(isPresented: $isCameraPresented) {
+                    CameraView()
+                }
             })
-            .sheet(isPresented: $isImagePickerPresented) {
-                CameraView()
-            }
         }
     }
 }
