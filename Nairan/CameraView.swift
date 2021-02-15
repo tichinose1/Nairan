@@ -11,7 +11,7 @@ import UIKit
 struct CameraView: UIViewControllerRepresentable {
 
     @Environment(\.presentationMode) private var presentationMode
-    @Binding var image: UIImage
+    @Binding var image: Image
 
     func makeUIViewController(context: Context) -> some UIViewController {
         let controller = UIImagePickerController()
@@ -36,7 +36,7 @@ struct CameraView: UIViewControllerRepresentable {
 
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let uiImage = info[.originalImage] as? UIImage {
-                parent.image = uiImage
+                parent.image = Image(uiImage: uiImage)
             }
 
             parent.presentationMode.wrappedValue.dismiss()

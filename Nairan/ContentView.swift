@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State private var isImagePickerPresented = false
     @State private var isCameraPresented = false
-    @State private var image: UIImage = UIImage()
+    @State private var image: Image = Image("advice01")
 
     var body: some View {
         NavigationView {
             List(Advice.advices) { advice in
-                AdviceListItemView(advice: advice, image: Image(uiImage: image))
+                AdviceListItemView(advice: advice, image: image)
             }
             .navigationTitle("指摘一覧")
             .navigationBarItems(trailing: HStack {
