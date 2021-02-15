@@ -26,7 +26,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
         Coordinator(self)
     }
 
-    class Coordinator: NSObject, PHPickerViewControllerDelegate {
+    class Coordinator: PHPickerViewControllerDelegate {
 
         var parent: ImagePickerView
 
