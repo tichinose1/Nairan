@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var isImagePickerPresented = false
     @State private var isCameraPresented = false
-    @State private var image: Image = Image("advice01")
     @State private var advices: [Advice] = Advice.advices
 
     var body: some View {
@@ -34,7 +33,7 @@ struct ContentView: View {
                     Image(systemName: "camera.viewfinder")
                 }
                 .sheet(isPresented: $isCameraPresented) {
-                    CameraView(image: self.$image, advices: self.$advices)
+                    CameraView(advices: self.$advices)
                 }
             })
         }
