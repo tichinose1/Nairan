@@ -36,6 +36,7 @@ struct CameraView: UIViewControllerRepresentable {
 
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let uiImage = info[.originalImage] as? UIImage {
+                // TODO: 何回も撮影すると同じ画像が使われる？
                 let image = Image(uiImage: uiImage)
                 parent.advices.append(
                     Advice(oid: "9999", title: "hoge", image: image, detail: "今撮りました")
