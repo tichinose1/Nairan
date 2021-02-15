@@ -14,7 +14,7 @@ struct AdviceListItemView: View {
 
     var body: some View {
         HStack {
-            image
+            image.resizable().scaledToFit().frame(width: 88.0, height: 88.0)
             Text(advice.title)
         }
     }
