@@ -10,11 +10,10 @@ import SwiftUI
 struct AdviceListItemView: View {
 
     var advice: Advice
-    var image: Image
 
     var body: some View {
         HStack {
-            image.resizable().scaledToFit().frame(width: 88.0, height: 88.0)
+            advice.image.resizable().scaledToFit().frame(width: 88.0, height: 88.0)
             Text(advice.title)
         }
     }
@@ -23,8 +22,7 @@ struct AdviceListItemView: View {
 struct AdviceListItemView_Previews: PreviewProvider {
     static var previews: some View {
         AdviceListItemView(
-            advice: Advice.advices[0],
-            image: Image("advice01")
+            advice: Advice.advices[0]
         )
         .previewLayout(.sizeThatFits)
     }

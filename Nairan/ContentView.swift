@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(Advice.advices) { advice in
-                AdviceListItemView(advice: advice, image: image)
+                AdviceListItemView(advice: advice)
             }
             .navigationTitle("指摘一覧")
             .navigationBarItems(trailing: HStack {
