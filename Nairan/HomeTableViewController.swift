@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PhotosUI
 
 class HomeTableViewController: UITableViewController {
 
@@ -22,5 +23,14 @@ class HomeTableViewController: UITableViewController {
         let item = items[indexPath.row]
         cell.configure(advice: item)
         return cell
+    }
+
+    // MARK: - Event handlers
+
+    @IBAction func didTapPhotoButton(_ sender: UIBarButtonItem) {
+        let configuration = PHPickerConfiguration()
+        let controller = PHPickerViewController(configuration: configuration)
+        present(controller, animated: true) {
+        }
     }
 }

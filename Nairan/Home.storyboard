@@ -42,7 +42,13 @@
                             <outlet property="delegate" destination="Yt3-Mn-hqr" id="C8B-yV-6Oj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Nob-bc-foX"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Nob-bc-foX">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="photo" catalog="system" id="Gf5-mn-5yz">
+                            <connections>
+                                <action selector="didTapPhotoButton:" destination="Yt3-Mn-hqr" id="nIt-SI-7I2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kpA-2D-3QJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +72,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
