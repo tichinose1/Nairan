@@ -15,6 +15,8 @@
 		771824D325DFDF4D004E6E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771824D125DFDF4D004E6E18 /* LaunchScreen.storyboard */; };
 		7731D84525DFE2130051AD8C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7731D84425DFE2130051AD8C /* Home.storyboard */; };
 		7731D84825DFE2440051AD8C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84725DFE2440051AD8C /* HomeTableViewController.swift */; };
+		7731D84C25E1553A0051AD8C /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84B25E1553A0051AD8C /* Advice.swift */; };
+		7731D84F25E1573C0051AD8C /* AdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84E25E1573C0051AD8C /* AdviceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		771824D425DFDF4D004E6E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7731D84425DFE2130051AD8C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7731D84725DFE2440051AD8C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		7731D84B25E1553A0051AD8C /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		7731D84E25E1573C0051AD8C /* AdviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				771824D425DFDF4D004E6E18 /* Info.plist */,
 				7731D84425DFE2130051AD8C /* Home.storyboard */,
 				7731D84725DFE2440051AD8C /* HomeTableViewController.swift */,
+				7731D84B25E1553A0051AD8C /* Advice.swift */,
+				7731D84E25E1573C0051AD8C /* AdviceTableViewCell.swift */,
 			);
 			path = Nairan;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			files = (
 				7731D84825DFE2440051AD8C /* HomeTableViewController.swift in Sources */,
 				771824CB25DFDF4C004E6E18 /* ViewController.swift in Sources */,
+				7731D84C25E1553A0051AD8C /* Advice.swift in Sources */,
 				771824C725DFDF4C004E6E18 /* AppDelegate.swift in Sources */,
 				771824C925DFDF4C004E6E18 /* SceneDelegate.swift in Sources */,
+				7731D84F25E1573C0051AD8C /* AdviceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
