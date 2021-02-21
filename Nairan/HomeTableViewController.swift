@@ -30,7 +30,15 @@ class HomeTableViewController: UITableViewController {
     @IBAction func didTapPhotoButton(_ sender: UIBarButtonItem) {
         let configuration = PHPickerConfiguration()
         let controller = PHPickerViewController(configuration: configuration)
+        controller.delegate = self
         present(controller, animated: true) {
         }
+    }
+}
+
+extension HomeTableViewController: PHPickerViewControllerDelegate {
+
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
