@@ -31,8 +31,7 @@ class HomeTableViewController: UITableViewController {
         let configuration = PHPickerConfiguration()
         let controller = PHPickerViewController(configuration: configuration)
         controller.delegate = self
-        present(controller, animated: true) {
-        }
+        present(controller, animated: true, completion: nil)
     }
 }
 
