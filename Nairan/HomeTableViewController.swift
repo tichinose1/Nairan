@@ -10,7 +10,7 @@ import PhotosUI
 
 class HomeTableViewController: UITableViewController {
 
-    private let items: [Advice] = Advice.items
+    private var items: [Advice] = Advice.items
 
     // MARK: - Table view data source
 
@@ -38,6 +38,15 @@ class HomeTableViewController: UITableViewController {
 extension HomeTableViewController: PHPickerViewControllerDelegate {
 
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        picker.dismiss(animated: true, completion: nil)
+        defer {
+            picker.dismiss(animated: true, completion: nil)
+        }
+
+        // TODO: itemsに再セットして、didSetでreloadDataした方が良いかも
+        for _ in results {
+            let advice = Advice(title: "hoge")
+            items.append(advice)
+        }
+        tableView.reloadData()
     }
 }
