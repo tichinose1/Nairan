@@ -10,7 +10,11 @@ import PhotosUI
 
 class HomeTableViewController: UITableViewController {
 
-    private var items: [Advice] = Advice.items
+    private var items: [Advice] = Advice.items {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -42,11 +46,7 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             picker.dismiss(animated: true, completion: nil)
         }
 
-        // TODO: itemsに再セットして、didSetでreloadDataした方が良いかも
-        for _ in results {
-            let advice = Advice(title: "hoge")
-            items.append(advice)
-        }
-        tableView.reloadData()
+        let newItems = results.map { _ in Advice(title: "hoge") }
+        items = items + newItems
     }
 }
