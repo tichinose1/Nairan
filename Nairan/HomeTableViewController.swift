@@ -32,7 +32,9 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Event handlers
 
     @IBAction func didTapPhotoButton(_ sender: UIBarButtonItem) {
-        let configuration = PHPickerConfiguration()
+        var configuration = PHPickerConfiguration()
+        configuration.filter = .images
+        configuration.selectionLimit = 0
         let controller = PHPickerViewController(configuration: configuration)
         controller.delegate = self
         present(controller, animated: true, completion: nil)
