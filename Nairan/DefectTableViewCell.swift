@@ -7,11 +7,11 @@
 
 import UIKit
 
-class AdviceTableViewCell: UITableViewCell {
+class DefectTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
 
-    func configure(advice: Advice) {
-        titleLabel.text = advice.title
+    func configure(item: Defect) {
+        titleLabel.text = item.title
     }
 }

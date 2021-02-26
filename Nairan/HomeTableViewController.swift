@@ -10,7 +10,7 @@ import PhotosUI
 
 class HomeTableViewController: UITableViewController {
 
-    private var items: [Advice] = Advice.items {
+    private var items: [Defect] = Defect.items {
         didSet {
             tableView.reloadData()
         }
@@ -23,9 +23,9 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as? AdviceTableViewCell else { fatalError() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "defectCell", for: indexPath) as? DefectTableViewCell else { fatalError() }
         let item = items[indexPath.row]
-        cell.configure(advice: item)
+        cell.configure(item: item)
         return cell
     }
 
@@ -46,7 +46,7 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             picker.dismiss(animated: true, completion: nil)
         }
 
-        let newItems = results.map { _ in Advice(title: "hoge") }
+        let newItems = results.map { _ in Defect(title: "hoge") }
         items = items + newItems
     }
 }
