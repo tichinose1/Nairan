@@ -48,7 +48,6 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             picker.dismiss(animated: true, completion: nil)
         }
 
-        let newItems = results.map { _ in Defect(title: "hoge") }
-        items = items + newItems
+        items = items + results.map { _ in Defect(title: "hoge") }
     }
 }
