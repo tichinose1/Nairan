@@ -9,6 +9,7 @@ import Foundation
 
 struct Defect {
     var title: String
+    var image: URL?
 }
 
 extension Defect {
