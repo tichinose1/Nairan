@@ -9,6 +9,7 @@ import UIKit
 
 class DefectTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
     func configure(item: Defect) {
