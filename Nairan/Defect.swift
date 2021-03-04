@@ -14,7 +14,7 @@ struct Defect {
 
 extension Defect {
     static var items: [Defect] = [
-        Defect(title: "汚れている"),
+        Defect(title: "汚れている", image: URL(string: "https://www.jyutakusindan.com/wp-content/uploads/sites/9/2016/11/2b530e80c7d0de90885e285c5d798063.png")),
         Defect(title: "傾いている"),
         Defect(title: "穴があいている")
     ]
