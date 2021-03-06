@@ -48,6 +48,6 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             picker.dismiss(animated: true, completion: nil)
         }
 
-        items = items + results.map { _ in Defect(title: "hoge") }
+        items = items + results.map { result in Defect(title: "hoge", image: URL(string: "https://lh3.googleusercontent.com/proxy/DBQ-SZ5YEm1OvvlEIzHL0thXnYa_5kHnXmadF_tA2jTgLN_uY4s0G5aDv3GbJfmJfOyNicbUn9atbdaXFJoqvgA_cdlRDAfKOQxgHxWydxgR4UjaZa96VhYG")!) }
     }
 }

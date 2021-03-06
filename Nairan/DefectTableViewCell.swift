@@ -15,8 +15,7 @@ class DefectTableViewCell: UITableViewCell {
     func configure(item: Defect) {
         titleLabel.text = item.title
 
-        guard let url = item.image else { return }
-        guard let data = try? Data(contentsOf: url) else { return }
+        guard let data = try? Data(contentsOf: item.image) else { return }
         thumbnailImageView.image = UIImage(data: data)
     }
 }
