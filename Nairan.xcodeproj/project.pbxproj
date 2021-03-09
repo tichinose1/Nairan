@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		7731D84825DFE2440051AD8C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84725DFE2440051AD8C /* HomeTableViewController.swift */; };
 		7731D84C25E1553A0051AD8C /* Defect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84B25E1553A0051AD8C /* Defect.swift */; };
 		7731D84F25E1573C0051AD8C /* DefectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731D84E25E1573C0051AD8C /* DefectTableViewCell.swift */; };
+		77A84BDB25F714E90044DCE8 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 77A84BDA25F714E90044DCE8 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A84BDB25F714E90044DCE8 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = Nairan;
+			packageProductDependencies = (
+				77A84BDA25F714E90044DCE8 /* Nuke */,
+			);
 			productName = Nairan;
 			productReference = 771824C325DFDF4C004E6E18 /* Nairan.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 771824BA25DFDF4C004E6E18;
+			packageReferences = (
+				77A84BD925F714E90044DCE8 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 771824C425DFDF4C004E6E18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77A84BD925F714E90044DCE8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77A84BDA25F714E90044DCE8 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77A84BD925F714E90044DCE8 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 771824BB25DFDF4C004E6E18 /* Project object */;
 }
