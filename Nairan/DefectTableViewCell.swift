@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Nuke
 
 class DefectTableViewCell: UITableViewCell {
 
@@ -15,7 +16,6 @@ class DefectTableViewCell: UITableViewCell {
     func configure(item: Defect) {
         titleLabel.text = item.title
 
-        guard let data = try? Data(contentsOf: item.image) else { return }
-        thumbnailImageView.image = UIImage(data: data)
+        Nuke.loadImage(with: item.image, into: thumbnailImageView)
     }
 }
