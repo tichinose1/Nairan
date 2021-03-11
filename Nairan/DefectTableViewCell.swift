@@ -16,6 +16,10 @@ class DefectTableViewCell: UITableViewCell {
     func configure(item: Defect) {
         titleLabel.text = item.title
 
-        Nuke.loadImage(with: item.image, into: thumbnailImageView)
+        let options = ImageLoadingOptions(
+            placeholder: UIImage(named: "defect"),
+            transition: .fadeIn(duration: 0.33)
+        )
+        Nuke.loadImage(with: item.image, options: options, into: thumbnailImageView)
     }
 }
