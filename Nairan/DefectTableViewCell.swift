@@ -20,6 +20,6 @@ class DefectTableViewCell: UITableViewCell {
             placeholder: UIImage(named: "defect"),
             transition: .fadeIn(duration: 0.33)
         )
-        Nuke.loadImage(with: item.image, options: options, into: thumbnailImageView)
+        Nuke.loadImage(with: item.imageURL, options: options, into: thumbnailImageView)
     }
 }
