@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct Defect {
     var title: String
     var imageURL: URL
+    var image: UIImage?
 }
 
 extension Defect {
