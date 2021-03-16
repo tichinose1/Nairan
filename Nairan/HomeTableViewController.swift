@@ -52,10 +52,9 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             guard result.itemProvider.canLoadObject(ofClass: UIImage.self) else { continue }
 
             result.itemProvider.loadObject(ofClass: UIImage.self) { image, error in
-                guard let image = image else { return }
+                guard let image = image as? UIImage else { return }
 
-                
-//                items = items + Defect(title: "hoge", imageURL: URL(string: "https://example.com")!, image: image)
+                self.items = self.items + [Defect(title: "hoge", imageURL: URL(string: "https://example.com")!, image: image)]
             }
         }
 //
