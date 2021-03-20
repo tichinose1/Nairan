@@ -54,7 +54,9 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             result.itemProvider.loadObject(ofClass: UIImage.self) { image, error in
                 guard let image = image as? UIImage else { return }
 
-                self.items = self.items + [Defect(title: "hoge", imageURL: URL(string: "https://example.com")!, image: image)]
+                DispatchQueue.main.async {
+                    self.items = self.items + [Defect(title: "hoge", imageURL: URL(string: "https://example.com")!, image: image)]
+                }
             }
         }
 //
