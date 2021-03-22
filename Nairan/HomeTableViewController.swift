@@ -55,7 +55,7 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
                 guard let image = image as? UIImage else { return }
 
                 DispatchQueue.main.async {
-                    self.items = self.items + [Defect(title: "hoge", imageURL: URL(string: "https://example.com")!, image: image)]
+                    self.items = self.items + [Defect(title: "title", imageURL: URL(string: "https://example.com")!, image: image)]
                 }
             }
         }
