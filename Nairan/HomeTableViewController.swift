@@ -29,6 +29,15 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
 
+    // MARK: - UITableViewDelegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
     // MARK: - Event handlers
 
     @IBAction func didTapPhotoButton(_ sender: UIBarButtonItem) {
@@ -46,13 +55,6 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         defer {
             picker.dismiss(animated: true, completion: nil)
-        }
-
-        let alertController = UIAlertController()
-        present(alertController, animated: true, completion: nil)
-
-        if true {
-            return
         }
 
         for result in results {
