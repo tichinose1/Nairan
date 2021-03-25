@@ -48,6 +48,13 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             picker.dismiss(animated: true, completion: nil)
         }
 
+        let alertController = UIAlertController()
+        present(alertController, animated: true, completion: nil)
+
+        if true {
+            return
+        }
+
         for result in results {
             guard result.itemProvider.canLoadObject(ofClass: UIImage.self) else { continue }
 
