@@ -35,6 +35,8 @@ class HomeTableViewController: UITableViewController {
         let alertController = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         alertController.addAction(alertAction)
+        alertController.addTextField { textField in
+        }
         present(alertController, animated: true, completion: nil)
     }
 
