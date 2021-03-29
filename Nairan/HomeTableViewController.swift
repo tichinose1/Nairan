@@ -32,7 +32,8 @@ class HomeTableViewController: UITableViewController {
     // MARK: - UITableViewDelegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "title", message: "メモの内容を入力してください", preferredStyle: .alert)
+        let item = items[indexPath.row]
+        let alertController = UIAlertController(title: item.title, message: "メモの内容を入力してください", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         alertController.addAction(alertAction)
         alertController.addTextField { textField in
