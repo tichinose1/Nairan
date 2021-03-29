@@ -38,6 +38,7 @@ class HomeTableViewController: UITableViewController {
         alertController.addAction(alertAction)
         alertController.addTextField { textField in
             textField.placeholder = "床が傾いている"
+            textField.text = item.detail
         }
         present(alertController, animated: true, completion: nil)
     }
@@ -68,7 +69,13 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
                 guard let image = image as? UIImage else { return }
 
                 DispatchQueue.main.async {
-                    self.items = self.items + [Defect(title: "title", imageURL: URL(string: "https://example.com")!, image: image)]
+                    self.items = self.items + [
+                        Defect(title: "title",
+                               imageURL: URL(string: "https://example.com")!,
+                               image: image,
+                               detail: ""
+                        )
+                    ]
                 }
             }
         }
