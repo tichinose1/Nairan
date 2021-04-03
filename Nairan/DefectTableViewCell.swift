@@ -16,6 +16,7 @@ class DefectTableViewCell: UITableViewCell {
     
     func configure(item: Defect) {
         titleLabel.text = item.title
+        detailLabel.text = item.detail
 
         if let image = item.image {
             thumbnailImageView.image = image
