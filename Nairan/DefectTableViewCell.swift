@@ -12,7 +12,8 @@ class DefectTableViewCell: UITableViewCell {
 
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var detailLabel: UILabel!
+    
     func configure(item: Defect) {
         titleLabel.text = item.title
 
