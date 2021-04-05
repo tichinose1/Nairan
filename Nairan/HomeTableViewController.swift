@@ -34,8 +34,9 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         let alertController = UIAlertController(title: item.title, message: nil, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
-        alertController.addAction(alertAction)
+        alertController.addAction(UIAlertAction(title: "登録", style: .default) { alertAction in
+        })
+        alertController.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
         alertController.addTextField { textField in
             textField.placeholder = "床が傾いている"
             textField.text = item.detail
