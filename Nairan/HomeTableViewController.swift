@@ -37,7 +37,8 @@ class HomeTableViewController: UITableViewController {
         alertController.addAction(UIAlertAction(title: "登録", style: .default) { _ in
             guard let textFields = alertController.textFields else { return }
 
-            item.detail = textFields[0].text!
+            let updatedItem = Defect(title: item.title, imageURL: item.imageURL, image: item.image, detail: textFields[0].text!)
+            self.items[indexPath.row] = updatedItem
         })
         alertController.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
         alertController.addTextField { textField in
