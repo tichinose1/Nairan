@@ -34,7 +34,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var item = items[indexPath.row]
         let alertController = UIAlertController(title: item.title, message: nil, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "登録", style: .default) { _ in
+        alertController.addAction(UIAlertAction(title: "登録する", style: .default) { _ in
             guard let textFields = alertController.textFields else { return }
 
             let updatedItem = Defect(title: item.title, imageURL: item.imageURL, image: item.image, detail: textFields[0].text!)
