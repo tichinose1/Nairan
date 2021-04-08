@@ -16,6 +16,17 @@ struct Defect {
 }
 
 extension Defect {
+    func copy(detail: String) -> Defect {
+        return Defect(
+            title: self.title,
+            imageURL: self.imageURL,
+            image: self.image,
+            detail: detail
+        )
+    }
+}
+
+extension Defect {
     static var items: [Defect] = [
         Defect(title: "リビングの壁①",
                imageURL: URL(string: "https://www.jyutakusindan.com/wp-content/uploads/sites/9/2016/11/2b530e80c7d0de90885e285c5d798063.png")!,
