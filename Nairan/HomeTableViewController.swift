@@ -32,13 +32,14 @@ class HomeTableViewController: UITableViewController {
     // MARK: - UITableViewDelegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var item = items[indexPath.row]
+        let item = items[indexPath.row]
         let alertController = UIAlertController(title: item.title, message: nil, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "登録", style: .default) { _ in
             guard let textFields = alertController.textFields else { return }
 
-            let updatedItem = item.copy(detail: textFields[0].text!)
-            self.items[indexPath.row] = updatedItem
+            var newItem = item
+            newItem.detail = textFields[0].text!
+            self.items[indexPath.row] = newItem
         })
         alertController.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
         alertController.addTextField { textField in
