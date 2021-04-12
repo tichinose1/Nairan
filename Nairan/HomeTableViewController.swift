@@ -74,11 +74,19 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
             result.itemProvider.loadObject(ofClass: UIImage.self) { image, error in
                 guard let image = image as? UIImage else { return }
 
+                let pngImageData = image.pngData()
+                let documentsURL = FileManager.default.urls(for:.libraryDirectory, in:.userDomainMask)[0]
+                let fileURL = documentsURL.appendingPathComponent(UUID().uuidString)
+                do{
+                    try pngImageData!.write(to:fileURL)
+                }catch{
+                }
+
                 DispatchQueue.main.async {
                     self.items = self.items + [
                         Defect(title: "title",
-                               imageURL: URL(string: "https://example.com")!,
-                               image: image,
+                               imageURL: fileURL,
+                               image: nil,
                                detail: ""
                         )
                     ]
