@@ -18,11 +18,6 @@ class DefectTableViewCell: UITableViewCell {
         titleLabel.text = item.title
         detailLabel.text = item.detail
 
-        if let image = item.image {
-            thumbnailImageView.image = image
-            return
-        }
-
         let options = ImageLoadingOptions(
             placeholder: UIImage(named: "defect"),
             transition: .fadeIn(duration: 0.33)

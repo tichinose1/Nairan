@@ -86,7 +86,6 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
                     self.items = self.items + [
                         Defect(title: "title",
                                imageURL: fileURL,
-                               image: nil,
                                detail: ""
                         )
                     ]
