@@ -84,9 +84,10 @@ extension HomeTableViewController: PHPickerViewControllerDelegate {
 
                 DispatchQueue.main.async {
                     self.items = self.items + [
-                        Defect(title: "title",
-                               imageURL: fileURL,
-                               detail: ""
+                        Defect(
+                            title: "title",
+                            imageURL: fileURL,
+                            detail: ""
                         )
                     ]
                 }
